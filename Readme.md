@@ -47,7 +47,7 @@ Please make sure to update tests as appropriate.
 
 
 ## TO DO
-- Implement Upload Modules Completly  (Could Not Complete due to End Sem Exams on 17/04 and 20/04 Sad Reacts) 
+- <s>Implement Upload Modules Completly  (Could Not Complete due to End Sem Exams on 17/04 and 20/04 Sad Reacts) </s>
 - Functionality to fetch your Return Filing Status
 - Functionality to fetch information of a GSTN
 - Will think of more in the future xD
