@@ -3,7 +3,10 @@ This Project is Build for a 2-day **hackathon** organized by **Pepcoding Educati
 
 # GST-Helper
  
-Gst Helper is a command-line application built using node js to help user to automate the download and uploads of GST Returns.
+ Gst Helper is a command-line application built using node js to help users to automate the download and uploads of GST Returns.
+  - It can Handle **Dynamic Captcha** For complete Headless operation.
+  - It can Download All Types of returns with minimal user interaction.
+  - It can upload returns with minimal user interaction.
 
 ## Installation
 
@@ -34,6 +37,11 @@ Please make sure to update tests as appropriate.
 ![Select Year using arrow keys](https://i.ibb.co/7NDk018/select-fin-year.png)
 #### Select Month using arrow keys
 ![Select Month using arrow keys](https://i.ibb.co/dK2B2vQ/select-month.png)
+#### Captcha Handling For Headless Opreation
+![Captcha Handling For Headless Opreation](https://i.ibb.co/N9YZCQz/captcha2.png)
+#### Dynamic File Selection
+![Dynamic File Selection](https://i.ibb.co/XxPZ53K/file-selection.png)
+
 #### Results
 ![Results](https://i.ibb.co/yWnXkfs/results.png)
 
