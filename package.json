@@ -1,0 +1,29 @@
+{
+  "name": "gst-helper",
+  "version": "1.0.0",
+  "description": "A Automated cli based application to help you with some gst portal  stuff",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niikhill/Gst-Helper.git"
+  },
+  "keywords": [
+    "gst"
+  ],
+  "author": "Nikhil Chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niikhill/Gst-Helper/issues"
+  },
+  "homepage": "https://github.com/niikhill/Gst-Helper#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "puppeteer": "^8.0.0",
+    "terminal-image": "^1.2.1"
+  }
+}
