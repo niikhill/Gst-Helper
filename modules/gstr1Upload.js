@@ -108,7 +108,7 @@ async function gstr1Upload(username, password, fin_year, month, base_dir, functi
 
                         //Upload Handler
                         const upelementHandle = await page.$("input[type=file]");
-                        await elementHandle.uploadFile(answers.file);
+                        await upelementHandle.uploadFile(answers.file);
 
                         await page.waitForTimeout(5000);
 
