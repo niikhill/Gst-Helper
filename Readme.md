@@ -1,5 +1,5 @@
 # PepCoding Hackathon
-This Project is Build for a 2-day **hackathon** organized by **Pepcoding Education Private Limited.**
+This Project is Build for a 2-day **hackathon** organized by [Jasbir Singh](https://github.com/Jasbir96) at **Pepcoding Education Private Limited.**
 
 # GST-Helper
  
