@@ -10,7 +10,7 @@ const chalk = require('chalk')
 const figlet = require('figlet')
 
 
-//The Top art Printer Function Being called
+// * The Top art Printer Function Being called
 printer();
 
 //Warnung User For Captcha
@@ -19,21 +19,34 @@ console.log('Please Enter Captcha Manually and Wait For the Script to Continue')
 console.log()
 
 
-//Prompt for Main Menu
+// * Prompt for Main Menu
 inquirer.prompt(quesObj.mainMenu).then((mainAnswer) => {
     if (mainAnswer.mainModule === 'Download Returns') {
-        //Prompt for Download Return Module
+
+        // * Prompt for Download Return Module
         inquirer.prompt(quesObj.questions1).then((answers1) => {
             if (answers1.DownloadModule === 'Gstr2B') {
+
+                // * prompting user for Selecting Financial year and Month
                 inquirer.prompt(quesObj.questions2).then((answers2) => {
+
+                    // * Gstr2 Download Function Being Called
                     gst2BObj.gst2B(answers1.username, answers1.password, answers2.fin_year, answers2.month, base_dir, functionObj);
                 })
             } else if (answers1.DownloadModule === 'Gstr3B') {
+
+                // * prompting user for Selecting Financial year and Month
                 inquirer.prompt(quesObj.questions2).then((answers2) => {
+
+                    // * Gstr3 Download Function Being Called
                     gst3BObj.gst3B(answers1.username, answers1.password, answers2.fin_year, answers2.month, base_dir, functionObj);
                 })
             } else if (answers1.DownloadModule === 'GstR1') {
+
+                // * prompting user for Selecting Financial year and Month
                 inquirer.prompt(quesObj.questions2).then((answers2) => {
+
+                    // * Gstr1 Download Function Being Called
                     gstR1Obj.gstr1(answers1.username, answers1.password, answers2.fin_year, answers2.month, base_dir, functionObj);
                 })
             } else if (answers1.DownloadModule === 'Exit') {
@@ -42,15 +55,19 @@ inquirer.prompt(quesObj.mainMenu).then((mainAnswer) => {
                 console.log("Invalid")
             }
         });
-        //Prompt for Upload Return Module
+        // * Prompt for Upload Return Module
     } else if (mainAnswer.mainModule === 'File Returns') {
-        console.log("Yet To Be Implemented")
         inquirer.prompt(quesObj.UploadModule).then((uploadanswer) => {
             if (uploadanswer.UploadModule === 'GstR1') {
+
+                // * prompting user for Selecting Financial year and Month
                 inquirer.prompt(quesObj.questions2).then((answers2) => {
+                    // * Gstr1 Upload Function Being Called
                     R1UploadObj.gstr1Upload(uploadanswer.username, uploadanswer.password, answers2.fin_year, answers2.month, base_dir, functionObj);
                 })
             } else if (uploadanswer.UploadModule === 'Gstr3B') {
+
+                // * prompting user for Selecting Financial year and Month
                 inquirer.prompt(quesObj.questions2).then((answers2) => {
                     console.log("Yet To be Implemented")
                 })
@@ -71,7 +88,7 @@ inquirer.prompt(quesObj.mainMenu).then((mainAnswer) => {
 
 
 
-//Function to print The Art
+// * Function to print The Art
 function printer() {
     console.log(`${chalk.cyan(
         figlet.textSync(' GST-HELPER ', {
